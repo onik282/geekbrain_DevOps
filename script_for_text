@@ -1,0 +1,8 @@
+#! /bin/bash -x
+echo "Введите имя фаила" 
+read file_name
+for file in $file_name
+do
+	grep -v "^$" $file | sed -e 's/\(.*\)/\U\1/' > tempfile
+	mv tempfile $file_name
+done
