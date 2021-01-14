@@ -1,0 +1,13 @@
+#!/bin/sh -x
+mkdir -p 20{10..17}
+for i in {2010..2017}
+do
+for j in {01..12}
+do
+mkdir $i/$j
+for y in parametr{1..2}.txt
+do
+echo "$y" > $i/$j/$y
+done
+done
+done
