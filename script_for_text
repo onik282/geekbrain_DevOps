@@ -1,4 +1,5 @@
 #! /bin/bash -x
+#задание 1. скрипт для текста
 echo "Введите имя фаила" 
 read file_name
 for file in $file_name
